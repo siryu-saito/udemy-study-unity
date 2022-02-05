@@ -5,12 +5,14 @@ using UnityEngine;
 public class EmbedVariable : MonoBehaviour
 {
 
-    const float COMSUMPUTION_TAX = 0.1f;
+    string[] sports = { "サッカー", "テニス", "バスケ" };
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log($"2021年時点で100円の商品の消費税は{100 * COMSUMPUTION_TAX}円");
+        Debug.Log(sports[0]);
+
+        Debug.Log(sports.Length);
     }
 
     // Update is called once per frame
