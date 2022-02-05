@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class EmbedVariable : MonoBehaviour
 {
-    
+
+    const float COMSUMPUTION_TAX = 0.1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Hello("佐藤", "田中", "後藤"));
-
-        Hello();
+        Debug.Log($"2021年時点で100円の商品の消費税は{100 * COMSUMPUTION_TAX}円");
     }
 
     // Update is called once per frame
@@ -20,18 +19,4 @@ public class EmbedVariable : MonoBehaviour
         
     }
 
-    string Hello(string name)
-    {
-        return $"こんにちは、{name}さん";
-    }
-
-    string Hello(string name1, string name2, string name3)
-    {
-        return $"こんにちは{name1}さん、{name2}さん、{name3}さん";
-    }
-
-    void Hello()
-    {
-        Debug.Log("こんにちは");
-    }
 }
