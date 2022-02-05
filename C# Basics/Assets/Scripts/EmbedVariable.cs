@@ -5,14 +5,18 @@ using UnityEngine;
 public class EmbedVariable : MonoBehaviour
 {
 
-    string[] sports = { "サッカー", "テニス", "バスケ" };
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(sports[0]);
+        int[] numbers = { 1, 2, 3, 4, 5, 6 };
 
-        Debug.Log(sports.Length);
+        foreach(int number in numbers)
+        {
+            Debug.Log(number);
+        }
+
     }
 
     // Update is called once per frame
