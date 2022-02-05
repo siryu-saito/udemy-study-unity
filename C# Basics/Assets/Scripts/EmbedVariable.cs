@@ -4,17 +4,34 @@ using UnityEngine;
 
 public class EmbedVariable : MonoBehaviour
 {
-    string name = "山田太郎";
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log($"こんにちは、{name}さん");
+        Debug.Log(Hello("佐藤", "田中", "後藤"));
+
+        Hello();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    string Hello(string name)
+    {
+        return $"こんにちは、{name}さん";
+    }
+
+    string Hello(string name1, string name2, string name3)
+    {
+        return $"こんにちは{name1}さん、{name2}さん、{name3}さん";
+    }
+
+    void Hello()
+    {
+        Debug.Log("こんにちは");
     }
 }
