@@ -2,32 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Monster
-{
-    public string kind = "モンスター";
-
-    public void bodyBlow()
-    {
-        Debug.Log("体当たり");
-    }
-}
-
-class Dragon : Monster
-{
-    public void fireBreath()
-    {
-        Debug.Log("火の息を吐く");
-    }
-}
-
-class Sline : Monster
-{
-    public void recovery()
-    {
-        Debug.Log("回復する");
-    }
-}
-
 
 public class EmbedVariable : MonoBehaviour
 {
@@ -35,10 +9,20 @@ public class EmbedVariable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Dragon dragon = new Dragon();
-        Debug.Log(dragon.kind);
-        dragon.bodyBlow();
-        dragon.fireBreath();
+        int number = 290;
+
+        if (number == 10)
+        {
+            Debug.Log(10);
+        }
+        else if (number == 30)
+        {
+            Debug.Log(30);
+        }
+        else
+        {
+            Debug.Log("それ以外");
+        }
     }
 
     // Update is called once per frame
