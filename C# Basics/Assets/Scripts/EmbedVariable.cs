@@ -2,22 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Human
+class Monster
 {
-    public int age = 25;
+    public string kind = "モンスター";
+
+    public void bodyBlow()
+    {
+        Debug.Log("体当たり");
+    }
+}
+
+class Dragon : Monster
+{
+    public void fireBreath()
+    {
+        Debug.Log("火の息を吐く");
+    }
+}
+
+class Sline : Monster
+{
+    public void recovery()
+    {
+        Debug.Log("回復する");
+    }
 }
 
 
 public class EmbedVariable : MonoBehaviour
 {
 
-    
-
     // Start is called before the first frame update
     void Start()
     {
-        Human jack = new Human();
-        Debug.Log(jack.age);
+        Dragon dragon = new Dragon();
+        Debug.Log(dragon.kind);
+        dragon.bodyBlow();
+        dragon.fireBreath();
     }
 
     // Update is called once per frame
