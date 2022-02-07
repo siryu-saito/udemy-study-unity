@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{489ADF6C-FC3B-5898-19BF-C1F694B56281}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UpdateFunction.cs">
+    <Files>
+      <File FileName="Assets/Scripts/UpdateFunction.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Unity Basics" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7cd22238-7181-4baa-ba91-6bb6849ca2c3" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
