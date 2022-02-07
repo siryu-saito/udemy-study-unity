@@ -13,6 +13,8 @@ public class UpdateFunction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("こんにちは");
+        //float horizontalValue = Input.GetAxis("Horizontal");
+        float verticalValue = Input.GetAxis("Vertical");
+        Debug.Log(verticalValue);
     }
 }
