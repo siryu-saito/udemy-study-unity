@@ -7,7 +7,9 @@ public class GameObjectScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(gameObject.name);
+        Camera camera = gameObject.gameObject.GetComponent<Camera>();
+
+        camera.enabled = false;
     }
 
     // Update is called once per frame
